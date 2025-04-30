@@ -17,13 +17,13 @@ using namespace std;
 int main() {
 	// ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 
-	int n, a, b;
+	lli n, a, b;
 	cin >> n >> a >> b;
 	
-	int lcm = (a * b) / __gcd(a, b);
+	lli lcm = (a * b) / __gcd(a, b);
 	
-	int cnt_a = lcm / a;
-	int cnt_b = lcm / b;
+	lli cnt_a = lcm / a;
+	lli cnt_b = lcm / b;
 	
 	cout << cnt_a + cnt_b << endl;
 
